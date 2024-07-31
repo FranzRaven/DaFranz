@@ -1,0 +1,110 @@
+:root {
+      --col1:  #000000;
+      --col2:  #181818;
+      --col3:  #282828;
+      --col4:  #383838;
+      --col5:  #474747;
+      --col6:  #565656;
+      --col7:  #646464;
+      --col8:  #717171;
+      --col9:  #7e7e7e;
+      --col10: #8c8c8c;
+      --col11: #9b9b9b;
+      --col12: #ababab;
+      --col13: #bdbdbd;
+      --col14: #d1d1d1;
+      --col15: #e7e7e7;
+      --col16: #ffffff;
+}
+
+
+ a {
+  color: var(--col12);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--col14);
+}
+
+html {
+  background-color: var(--col2);
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.5;
+  background: var(--col3);
+  color: var(--col14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+/* estilos de la barra de navegación*/
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: var(--col12);
+}
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: var(--col11);
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background-color: var(--col5);
+}
+
+.expanded {
+  display: unset;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+  .hamburger {
+    display: none;
+  }
+}
